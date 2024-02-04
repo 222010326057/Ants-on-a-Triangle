@@ -1,0 +1,9 @@
+def probability_no_collision():
+    total_outcomes = 2 ** 3  # Total possible outcomes
+    favorable_outcomes = 2   # Ants move in the same direction
+    probability_collide = favorable_outcomes / total_outcomes
+    probability_no_collide = 1 - probability_collide
+    return round(probability_no_collide, 2)
+
+# Calculate and print the probability
+print(probability_no_collision())
